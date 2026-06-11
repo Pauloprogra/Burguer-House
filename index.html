@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Burger House | Hambúrgueres Artesanais Premium</title>
+  <meta name="description" content="Experimente o melhor hambúrguer artesanal da cidade na Burger House. Ingredientes selecionados, carne fresca selecionada, molhos artesanais e entrega super rápida." />
+  <meta name="keywords" content="hamburgueria, hambúrguer artesanal, burger house, delivery de hambúrguer, hambúrguer premium, batata frita, milkshake" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://burgerhouse.com.br/" />
+  <meta property="og:title" content="Burger House | Hambúrgueres Artesanais Premium" />
+  <meta property="og:description" content="Ingredientes selecionados, sabor incomparável e entrega super rápida. Peça já o seu Burger House!" />
+  <meta property="og:image" content="/src/assets/images/hero_burger_1781201321724.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Burger House | Hambúrgueres Artesanais Premium" />
+  <meta property="twitter:description" content="Ingredientes selecionados, sabor incomparável e entrega super rápida. Peça já o seu Burger House!" />
+  <meta property="twitter:image" content="/src/assets/images/hero_burger_1781201321724.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--bg-primary:#0F0F0F;--bg-secondary:#1A1A1A;--bg-tertiary:#262626;--color-red:#DC2626;--color-red-hover:#B91C1C;--color-yellow:#FACC15;--color-orange:#FB923C;--text-primary:#FFFFFF;--text-secondary:#D1D5DB;--text-muted:#9CA3AF;--font-display:'Space Grotesk',sans-serif;--font-body:'Inter',sans-serif;--shadow-sm:0 4px 6px -1px rgba(0,0,0,0.3),0 2px 4px -1px rgba(0,0,0,0.2);--shadow-lg:0 20px 25px -5px rgba(0,0,0,0.5),0 10px 10px -5px rgba(0,0,0,0.4);--shadow-neon:0 0 20px rgba(220,38,38,0.2);--radius-sm:8px;--radius-md:16px;--radius-lg:24px;--radius-full:9999px;--transition-fast:0.25s cubic-bezier(0.4,0,0.2,1);--transition-normal:0.4s cubic-bezier(0.4,0,0.2,1);--transition-slow:0.6s cubic-bezier(0.4,0,0.2,1)}
+  html{scroll-behavior:smooth;font-size:16px;color-scheme:dark}
+  body{font-family:var(--font-body);background-color:var(--bg-primary);color:var(--text-primary);overflow-x:hidden;line-height:1.6}
+  img{max-width:100%;height:auto;display:block}
+  ul{list-style:none}
+  a{text-decoration:none;color:inherit;transition:var(--transition-fast)}
+  button{background:none;border:none;cursor:pointer;font-family:inherit;transition:var(--transition-fast)}
+  .container{width:100%;max-width:1280px;margin:0 auto;padding:0 1.5rem}
+  .section-header{text-align:center;margin-bottom:3.5rem}
+  .section-tag{display:inline-block;font-family:var(--font-display);font-size:0.85rem;font-weight:700;text-transform:uppercase;color:var(--color-yellow);background:rgba(250,204,21,0.1);padding:0.35rem 1rem;border-radius:var(--radius-full);margin-bottom:1rem;letter-spacing:2px}
+  .section-title{font-family:var(--font-display);font-size:2.25rem;font-weight:750;line-height:1.2;margin-bottom:1rem;letter-spacing:-1px}
+  .section-subtitle{font-size:1.05rem;color:var(--text-secondary);max-width:600px;margin:0 auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.75rem;font-family:var(--font-display);font-weight:600;padding:1rem 2rem;border-radius:var(--radius-md);transition:var(--transition-normal);font-size:0.95rem;letter-spacing:-0.2px}
+  .btn-primary{background-color:var(--color-red);color:var(--text-primary);box-shadow:0 4px 15px rgba(220, 38, 38, 0.35)}
+  .btn-primary:hover{background-color:var(--color-red-hover);transform:translateY(-3px);box-shadow:0 6px 20px rgba(220, 38, 38, 0.45)}
+  .btn-primary.yellow-theme{background-color:var(--color-yellow);color:var(--bg-primary);box-shadow:0 4px 15px rgba(250, 204, 21, 0.25)}
+  .btn-primary.yellow-theme:hover{background-color:#E2B60D;transform:translateY(-3px);box-shadow:0 6px 20px rgba(250,204,21,0.35)}
+  .btn-outline{border:2px solid rgba(255,255,255,0.15);color:var(--text-primary);background-color:transparent}
+  .btn-outline:hover{border-color:var(--text-primary);background-color:rgba(255,255,255,0.05);transform:translateY(-3px)}
+  .btn-dark{background-color:#2D2D2D;color:var(--text-primary)}
+  .btn-dark:hover{background-color:#3D3D3D;transform:translateY(-3px)}
+  .fade-in-element{opacity:0;transform:translateY(30px);transition:opacity var(--transition-slow),transform var(--transition-slow)}
+  .fade-in-element.scrolled{opacity:1;transform:translateY(0)}
+  .scale-hover:hover{transform:scale(1.03)}
+  .btn-top{position:fixed;bottom:2rem;right:2rem;width:50px;height:50px;background-color:var(--color-red);color:var(--text-primary);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:99;opacity:0;pointer-events:none;transform:translateY(15px);transition:opacity var(--transition-normal),transform var(--transition-normal),background var(--transition-fast)}
+  .btn-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+  .btn-top:hover{background-color:var(--color-red-hover);transform:scale(1.1)}
+  .header{position:fixed;top:0;left:0;width:100%;z-index:100;padding:1.5rem 0;transition:var(--transition-normal);background:transparent}
+  .header.sticky{padding:0.9rem 0;background-color:rgba(15,15,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.06);box-shadow:var(--shadow-sm)}
+  .header-container{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1280px;margin:0 auto;padding:0 1.5rem}
+  .logo{font-family:var(--font-display);font-size:1.6rem;font-weight:700;display:flex;align-items:center;gap:0.5rem;letter-spacing:-0.5px}
+  .accent-text{color:var(--color-red)}
+  .nav-menu ul{display:flex;align-items:center;gap:2rem}
+  .nav-link{font-family:var(--font-display);font-weight:500;font-size:0.95rem;color:var(--text-secondary);position:relative;padding:0.5rem 0}
+  .nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background-color:var(--color-red);transition:var(--transition-normal)}
+  .nav-link:hover,.nav-link.active{color:var(--text-primary)}
+  .nav-link:hover::after,.nav-link.active::after{width:100%}
+  .header-actions{display:flex;align-items:center;gap:1.25rem}
+  .btn-header-cta{padding:0.65rem 1.4rem;border-radius:var(--radius-sm);font-size:0.85rem}
+  .hamburger{display:none;flex-direction:column;justify-content:space-between;width:25px;height:20px;background:transparent;border:none;cursor:pointer}
+  .hamburger .bar{display:block;width:100%;height:3px;background-color:var(--text-primary);border-radius:var(--radius-full);transition:var(--transition-normal)}
+  .hero-section{padding-top:10rem;padding-bottom:6rem;background-image:radial-gradient(circle at 80% 20%,rgba(220,38,38,0.08) 0%,transparent 60%);position:relative;overflow:hidden}
+  .hero-container{display:grid;grid-template-columns:1fr;align-items:center;gap:4rem;position:relative;max-width:1280px;margin:0 auto;padding:0 1.5rem}
+  .hero-content{display:flex;flex-direction:column;align-items:flex-start}
+  .badge-best-seller{display:flex;align-items:center;gap:0.5rem;font-family:var(--font-display);font-size:0.75rem;font-weight:700;letter-spacing:2.2px;color:var(--color-yellow);background-color:rgba(250,204,21,0.08);border:1px solid rgba(250,204,21,0.2);padding:0.45rem 1rem;border-radius:var(--radius-full);margin-bottom:1.75rem;text-transform:uppercase}
+  .hero-title{font-family:var(--font-display);font-size:2.8rem;font-weight:800;line-height:1.15;letter-spacing:-1.5px;margin-bottom:1.5rem;text-transform:capitalize}
+  .text-gradient{background:linear-gradient(135deg,var(--color-orange) 0%,var(--color-red) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .hero-subtitle{font-size:1.15rem;line-height:1.65;color:var(--text-secondary);margin-bottom:2.5rem;max-width:550px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:1rem;width:100%}
+  .hero-features-preview{display:flex;align-items:center;gap:1.75rem;margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);width:100%}
+  .hero-preview-item{display:flex;flex-direction:column}
+  .hero-preview-num{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--color-red);line-height:1.2}
+  .hero-preview-lbl{font-size:0.85rem;color:var(--text-muted)}
+  .hero-preview-divider{width:1px;height:35px;background-color:rgba(255,255,255,0.12)}
+  .hero-image-wrapper{position:relative;display:flex;justify-content:center;align-items:center}
+  .hero-circle-bg{position:absolute;width:80%;height:80%;border-radius:var(--radius-full);background:radial-gradient(circle,rgba(220,38,38,0.18) 0%,transparent 70%);z-index:1}
+  .hero-img{position:relative;z-index:2;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);transition:var(--transition-slow);object-fit:cover;width:100%;max-height:480px;aspect-ratio:16/9}
+  .hero-image-wrapper:hover .hero-img{transform:translateY(-8px) rotate(1deg)}
+  .floating-badge{position:absolute;background-color:rgba(26,26,26,0.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.08);padding:0.85rem 1.25rem;border-radius:var(--radius-md);display:flex;align-items:center;gap:0.85rem;z-index:3;box-shadow:var(--shadow-lg);animation:float 4s ease-in-out infinite}
+  .floating-badge.badge-1{top:10%;left:-5%;animation-delay:0s}
+  .floating-badge.badge-2{bottom:12%;right:-5%;animation-delay:2s}
+  .badge-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:rgba(220,38,38,0.15);display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+  .badge-text h4{font-family:var(--font-display);font-size:0.9rem;font-weight:600;color:var(--text-primary)}
+  .badge-text p{font-size:0.75rem;color:var(--text-muted)}
+  @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+  .highlights-section{padding:4rem 0;background-color:var(--bg-secondary);border-top:1px solid rgba(255,255,255,0.03);border-bottom:1px solid rgba(255,255,255,0.03)}
+  .highlights-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+  .highlight-card{background-color:var(--bg-primary);border:1px solid rgba(255,255,255,0.04);border-radius:var(--radius-md);padding:2.25rem 2rem;transition:var(--transition-normal);position:relative;overflow:hidden}
+  .highlight-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background-color:var(--color-red);transform:scaleY(0);transition:var(--transition-normal);transform-origin:bottom}
+  .highlight-card:hover{transform:translateY(-5px);border-color:rgba(220,38,38,0.2);box-shadow:var(--shadow-lg)}
+  .highlight-card:hover::before{transform:scaleY(1)}
+  .highlight-icon{font-size:2.22rem;margin-bottom:1.25rem}
+  .highlight-title{font-family:var(--font-display);font-size:1.2rem;font-weight:600;margin-bottom:0.75rem}
+  .highlight-desc{font-size:0.9rem;color:var(--text-secondary);line-height:1.5}
+  .menu-section{padding:6rem 0}
+  .menu-filters{display:flex;justify-content:center;flex-wrap:wrap;gap:0.75rem;margin-bottom:3.5rem}
+  .filter-btn{font-family:var(--font-display);font-weight:550;font-size:0.9rem;color:var(--text-secondary);background-color:var(--bg-secondary);padding:0.7rem 1.4rem;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,0.05)}
+  .filter-btn:hover{background-color:var(--bg-tertiary);color:var(--text-primary);border-color:rgba(255,255,255,0.15)}
+  .filter-btn.active{background-color:var(--color-red);color:var(--text-primary);border-color:var(--color-red);box-shadow:0 4px 10px rgba(220,38,38,0.3)}
+  .menu-products-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+  .product-card{background-color:var(--bg-secondary);border-radius:var(--radius-md);border:1px solid rgba(255,255,255,0.04);overflow:hidden;display:flex;flex-direction:column;transition:var(--transition-normal)}
+  .product-card:hover{transform:translateY(-8px);border-color:rgba(250,204,21,0.15);box-shadow:var(--shadow-lg)}
+  .product-img-wrapper{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background-color:#222}
+  .product-img{width:100%;height:100%;object-fit:cover;transition:var(--transition-slow)}
+  .product-card:hover .product-img{transform:scale(1.08)}
+  .product-badge{position:absolute;top:1rem;left:1rem;background-color:var(--color-red);color:var(--text-primary);font-family:var(--font-display);font-size:0.7rem;font-weight:700;text-transform:uppercase;padding:0.4rem 0.85rem;border-radius:var(--radius-sm);letter-spacing:0.5px}
+  .product-badge.premium{background-color:var(--color-orange)}
+  .product-badge.discount{background-color:var(--color-yellow);color:var(--bg-primary)}
+  .product-info{padding:1.5rem;display:flex;flex-direction:column;flex-grow:1}
+  .product-title{font-family:var(--font-display);font-size:1.35rem;font-weight:600;margin-bottom:0.5rem}
+  .product-desc{font-size:0.85rem;color:var(--text-secondary);line-height:1.5;margin-bottom:1.5rem;flex-grow:1}
+  .product-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.06)}
+  .product-price{font-family:var(--font-display);font-size:1.45rem;font-weight:700;color:var(--color-yellow)}
+  .btn-buy{font-family:var(--font-display);font-size:0.85rem;font-weight:600;color:var(--text-primary);display:inline-flex;align-items:center;gap:0.5rem}
+  .btn-buy:hover{color:var(--color-red)}
+  .btn-buy .arrow-icon{font-size:1.05rem;transition:var(--transition-fast)}
+  .btn-buy:hover .arrow-icon{transform:translateX(4px)}
+  .product-card.hidden{display:none !important}
+  .promotions-section{padding:6rem 0;background-color:var(--bg-secondary)}
+  .promotions-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+  .promo-card{background-color:var(--bg-primary);border:1px solid rgba(255,255,255,0.05);border-radius:var(--radius-md);padding:2.5rem 2rem;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:var(--transition-normal)}
+  .promo-card:hover{transform:translateY(-5px);border-color:rgba(250, 204, 21, 0.25);box-shadow:var(--shadow-lg)}
+  .promo-badge-tag{align-self:flex-start;font-family:var(--font-display);font-weight:700;font-size:0.75rem;color:var(--color-yellow);background-color:rgba(250,204,21,0.08);border:1px solid rgba(250,204,21,0.2);padding:0.35rem 0.85rem;border-radius:var(--radius-sm);margin-bottom:1.5rem;letter-spacing:0.5px}
+  .promo-content h3{font-family:var(--font-display);font-size:1.45rem;font-weight:650;margin-bottom:0.75rem}
+  .promo-content p{font-size:0.9rem;color:var(--text-secondary);line-height:1.6;margin-bottom:1.75rem}
+  .promo-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:auto}
+  .discount-label{font-family:var(--font-display);font-weight:700;color:var(--color-orange);font-size:1.1rem}
+  .promo-card .btn{padding:0.65rem 1.25rem;font-size:0.85rem}
+  .delivery-section{padding:6rem 0}
+  .delivery-grid-wrapper{display:grid;grid-template-columns:1fr;align-items:center;gap:4.5rem}
+  .delivery-desc{font-size:1.1rem;color:var(--text-secondary);line-height:1.65;margin-bottom:2.5rem}
+  .delivery-stats{display:grid;grid-template-columns:1fr;gap:2rem}
+  .stat-item{display:flex;align-items:flex-start;gap:1.25rem}
+  .stat-icon{width:48px;height:48px;background-color:var(--bg-secondary);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+  .stat-text h3{font-family:var(--font-display);font-size:1.1rem;font-weight:600;margin-bottom:0.25rem}
+  .stat-text p{font-size:0.85rem;color:var(--text-secondary)}
+  .delivery-map-card{background-color:var(--bg-secondary);border:1px solid rgba(255,255,255,0.05);border-radius:var(--radius-md);padding:2rem;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+  .delivery-map-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem;font-family:var(--font-display);font-weight:600;font-size:0.95rem}
+  .delivery-map-pulse{width:10px;height:10px;background-color:var(--color-yellow);border-radius:var(--radius-full);position:relative}
+  .delivery-map-pulse::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;border-radius:var(--radius-full);background-color:var(--color-yellow);animation:pulse-ring 1.5s cubic-bezier(0.4,0,0.6,1) infinite}
+  @keyframes pulse-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(3.5);opacity:0}}
+  .canvas-map-mockup{height:280px;background-color:#0c0c0c;border-radius:var(--radius-sm);position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+  .radius-circle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:1px dashed rgba(220,38,38,0.15);border-radius:var(--radius-full)}
+  .circle-1{width:100px;height:100px;background-color:rgba(220,38,38,0.015)}
+  .circle-2{width:220px;height:220px}
+  .circle-3{width:340px;height:340px}
+  .grid-line{position:absolute;background-color:rgba(255,255,255,0.025)}
+  .horizontal-line{top:50%;left:0;width:100%;height:1px}
+  .vertical-line{left:50%;top:0;width:1px;height:100%}
+  .street-label{position:absolute;font-family:var(--font-display);font-size:0.65rem;color:rgba(255,255,255,0.15);letter-spacing:1px;text-transform:uppercase}
+  .street-label:not(.vertical){top:calc(50% + 5px);right:15px}
+  .street-label.vertical{left:calc(50% + 5px);top:15px;transform:rotate(90deg);transform-origin:left top}
+  .map-pin{position:absolute;transform:translate(-50%,-50%);z-index:5}
+  .central-pin{top:50%;left:50%}
+  .central-pin .pin-icon{width:44px;height:44px;background-color:var(--color-red);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-size:1.35rem;box-shadow:0 0 15px rgba(220,38,38,0.6)}
+  .pin-pulse{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:var(--radius-full);border:1px solid var(--color-red);animation:pulse-pin 2s cubic-bezier(0.4,0,0.6,1) infinite}
+  @keyframes pulse-pin{0%{transform:scale(1);opacity:0.8}100%{transform:scale(2.2);opacity:0}}
+  .courier-pin{top:42%;left:35%;animation:drive 10s linear infinite alternate}
+  .courier-pin .pin-icon{width:32px;height:32px;background-color:var(--color-orange);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-size:1rem;box-shadow:0 0 10px rgba(251,146,60,0.5)}
+  .destination-pin .pin-icon{width:30px;height:30px;background-color:var(--bg-tertiary);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-size:0.95rem}
+  .pin-b{top:22%;left:75%}
+  .pin-c{top:78%;left:22%}
+  @keyframes drive{0%{left:40%;top:40%;transform:rotate(0deg)}50%{left:50%;top:50%;transform:rotate(-10deg)}100%{left:70%;top:35%;transform:rotate(10deg)}}
+  .delivery-map-footer{margin-top:1.5rem;font-family:var(--font-display);font-size:0.85rem}
+  .delivery-subtext{color:var(--text-muted);font-size:0.75rem;margin-top:0.25rem}
+  .gallery-section{padding:6rem 0;background-color:#0c0c0c}
+  .gallery-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:1rem}
+  .gallery-item{position:relative;aspect-ratio:1/1;overflow:hidden;border-radius:var(--radius-md);cursor:pointer;background-color:var(--bg-secondary)}
+  .gallery-img{width:100%;height:100%;object-fit:cover;transition:transform var(--transition-slow)}
+  .gallery-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(15,15,15,0.9) 0%,rgba(15,15,15,0.2) 80%);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;padding:1.5rem;opacity:0;transition:opacity var(--transition-normal);z-index:2}
+  .gallery-icon{font-size:1.5rem;margin-bottom:0.5rem;transform:translateY(10px);transition:transform var(--transition-normal)}
+  .gallery-text{font-family:var(--font-display);font-weight:700;font-size:1.1rem;transform:translateY(10px);transition:transform var(--transition-normal) 0.05s}
+  .gallery-item:hover .gallery-img{transform:scale(1.08)}
+  .gallery-item:hover .gallery-overlay{opacity:1}
+  .gallery-item:hover .gallery-icon,.gallery-item:hover .gallery-text{transform:translateY(0)}
+  .testimonials-section{padding:6rem 0}
+  .carousel-container{max-width:800px;margin:0 auto;position:relative;overflow:hidden;padding:2.5rem 1rem}
+  .carousel-track{display:flex;width:100%;position:relative;height:320px}
+  .testimonial-slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;pointer-events:none;transform:scale(0.96);visibility:hidden;transition:opacity var(--transition-slow),transform var(--transition-slow),visibility var(--transition-slow);background-color:var(--bg-secondary);border:1px solid rgba(255,255,255,0.04);padding:2.5rem;border-radius:var(--radius-lg);display:flex;flex-direction:column;justify-content:center;box-shadow:var(--shadow-lg)}
+  .testimonial-slide.active{opacity:1;pointer-events:auto;transform:scale(1);visibility:visible}
+  .testimonial-stars{color:var(--color-yellow);font-size:1.35rem;margin-bottom:1.25rem;letter-spacing:2px}
+  .testimonial-text{font-size:1.1rem;font-style:italic;color:var(--text-secondary);line-height:1.6;margin-bottom:2rem}
+  .testimonial-client{display:flex;align-items:center;gap:1.25rem;margin-top:auto}
+  .client-avatar{width:48px;height:48px;border-radius:var(--radius-full);background-color:var(--color-red);color:var(--text-primary);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:1.1rem}
+  .client-meta h4{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary)}
+  .client-meta span{font-size:0.8rem;color:var(--text-muted)}
+  .carousel-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;background-color:var(--bg-tertiary);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;color:var(--text-primary);border:1px solid rgba(255, 255, 255, 0.08);box-shadow:var(--shadow-sm);z-index:10}
+  .carousel-nav:hover{background-color:var(--color-red);color:var(--text-primary);border-color:var(--color-red);transform:translateY(-50%) scale(1.08)}
+  .carousel-nav.prev{left:-20px}
+  .carousel-nav.next{right:-20px}
+  .carousel-indicators{display:flex;justify-content:center;gap:0.65rem;margin-top:2rem}
+  .indicator{width:10px;height:10px;border-radius:var(--radius-full);background-color:var(--bg-tertiary);cursor:pointer;transition:var(--transition-fast)}
+  .indicator.active{background-color:var(--color-red);width:24px}
+  .cta-banner-section{padding:5.5rem 0;background:linear-gradient(135deg,rgba(220,38,38,0.95) 0%,rgba(251,146,60,0.95) 100%),url('https://picsum.photos/seed/texture/1920/1080?blur=10');background-size:cover;background-position:center;position:relative;overflow:hidden;border-radius:var(--radius-lg);margin:4rem auto;max-width:1200px;width:calc(100% - 3rem)}
+  .cta-banner-content{text-align:center;color:var(--text-primary);max-width:800px;margin:0 auto;padding:0 1rem}
+  .cta-banner-title{font-family:var(--font-display);font-size:2rem;font-weight:800;margin-bottom:1.25rem;line-height:1.2}
+  .cta-banner-text{font-size:1.05rem;line-height:1.6;margin-bottom:2.5rem;color:var(--text-primary);opacity:0.95}
+  .cta-banner-actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
+  .faq-section{padding:6rem 0}
+  .faq-accordion-wrapper{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+  .faq-item{background-color:var(--bg-secondary);border:1px solid rgba(255,255,255,0.04);border-radius:var(--radius-md);overflow:hidden;transition:var(--transition-normal)}
+  .faq-item:hover,.faq-item.active{border-color:rgba(220,38,38,0.25);box-shadow:var(--shadow-sm)}
+  .faq-question{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.6rem 2rem;font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--text-primary);text-align:left;gap:1.5rem}
+  .faq-icon{display:flex;align-items:center;justify-content:center;color:var(--color-orange);transition:var(--transition-normal)}
+  .faq-item.active .faq-icon{transform:rotate(180deg);color:var(--color-red)}
+  .faq-answer{max-height:0;overflow:hidden;transition:max-height var(--transition-normal) ease-out;background-color:rgba(15,15,15,0.2)}
+  .faq-answer p{padding:0 2rem 1.6rem 2rem;color:var(--text-secondary);font-size:0.92rem;line-height:1.6}
+  .contact-section{padding:6rem 0;background-color:var(--bg-secondary)}
+  .contact-grid{display:grid;grid-template-columns:1fr;gap:3.5rem}
+  .contact-info-card{background-color:var(--bg-primary);border:1px solid rgba(255,255,255,0.04);border-radius:var(--radius-md);padding:2.5rem;box-shadow:var(--shadow-sm)}
+  .contact-info-item{display:flex;align-items:flex-start;gap:1.25rem;margin-bottom:2rem}
+  .contact-info-item:last-child{margin-bottom:0}
+  .contact-icon{font-size:1.5rem;line-height:1}
+  .contact-text h3{font-family:var(--font-display);font-size:1.15rem;font-weight:600;margin-bottom:0.35rem}
+  .contact-text p{font-size:0.9rem;color:var(--text-secondary)}
+  .danger-subtext{color:var(--color-red);font-weight:600;font-size:0.8rem;text-transform:uppercase;margin-top:0.25rem}
+  .contact-social-pills{display:flex;flex-wrap:wrap;gap:0.75rem;margin-top:1.75rem}
+  .social-pill{display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--font-display);font-weight:600;font-size:0.85rem;padding:0.65rem 1.25rem;border-radius:var(--radius-md);border:1px solid rgba(255,255,255,0.08)}
+  .social-pill:hover{transform:translateY(-2px);color:var(--text-primary);background-color:rgba(255,255,255,0.05)}
+  .social-pill.instagram:hover{border-color:#E1306C}
+  .social-pill.facebook:hover{border-color:#1877F2}
+  .social-pill.whatsapp:hover{border-color:#25D366}
+  .contact-map-wrapper{position:relative}
+  .interactive-map-card{height:400px;background-color:#222;border-radius:var(--radius-md);overflow:hidden;border:1px solid rgba(255,255,255,0.05);box-shadow:var(--shadow-lg);position:relative}
+  .interactive-map-card iframe{width:100%;height:100%;filter:grayscale(1) invert(0.92) contrast(1.1)}
+  .map-tag-absolute{position:absolute;top:1rem;left:1rem;background-color:var(--color-red);color:var(--text-primary);font-family:var(--font-display);font-size:0.7rem;font-weight:700;padding:0.45rem 1rem;border-radius:var(--radius-sm);z-index:5;box-shadow:var(--shadow-sm)}
+  .map-overlay-detail{position:absolute;bottom:0;left:0;width:100%;background:linear-gradient(to top,rgba(15,15,15,0.95) 0%,rgba(15,15,15,0.6) 100%);padding:1.5rem;border-top:1px solid rgba(255,255,255,0.06)}
+  .map-overlay-detail h4{font-family:var(--font-display);font-size:1.05rem;font-weight:600;margin-bottom:0.25rem}
+  .map-overlay-detail p{font-size:0.85rem;color:var(--text-secondary)}
+  .footer{background-color:#080808;padding:5rem 0 2rem 0;border-top:1px solid rgba(255, 255, 255, 0.03)}
+  .footer-top{display:grid;grid-template-columns:1fr;gap:3rem;margin-bottom:4rem}
+  .footer-brand{max-width:400px}
+  .footer-logo{font-family:var(--font-display);font-size:1.8rem;font-weight:700;margin-bottom:1.5rem;display:inline-block}
+  .footer-brand-desc{font-size:0.9rem;color:var(--text-secondary);line-height:1.65}
+  .footer-links-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem}
+  .footer-title{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:var(--text-primary);margin-bottom:1.5rem}
+  .footer-group ul{display:flex;flex-direction:column;gap:0.85rem}
+  .footer-group ul a{font-size:0.9rem;color:var(--text-secondary)}
+  .footer-group ul a:hover{color:var(--color-red);padding-left:4px}
+  .footer-socials{display:flex;gap:1rem;margin-bottom:1.5rem}
+  .social-icon{width:44px;height:44px;background-color:var(--bg-secondary);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;color:var(--text-secondary);border:1px solid rgba(255,255,255,0.05)}
+  .social-icon:hover{transform:translateY(-3px);color:var(--text-primary)}
+  .social-icon:hover:nth-child(1){background-color:#E1306C;border-color:#E1306C}
+  .social-icon:hover:nth-child(2){background-color:#1877F2;border-color:#1877F2}
+  .social-icon:hover:nth-child(3){background-color:#25D366;border-color:#25D366}
+  .footer-hours{font-size:0.85rem;color:var(--text-muted);line-height:1.5}
+  .footer-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,0.05);display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center;font-size:0.85rem;color:var(--text-muted)}
+  @media screen and (min-width:640px){.section-title{font-size:2.75rem}.highlights-grid{grid-template-columns:repeat(2,1fr)}.menu-products-grid{grid-template-columns:repeat(2,1fr)}.promotions-grid{grid-template-columns:repeat(2,1fr)}}
+  @media screen and (min-width:992px){.hamburger{display:none}.nav-menu{display:block !important}.btn-header-cta{display:inline-flex !important}.hero-container{grid-template-columns:1.1fr 0.9fr;gap:2rem}.hero-title{font-size:4rem}.highlights-grid{grid-template-columns:repeat(4,1fr)}.menu-products-grid{grid-template-columns:repeat(3,1fr)}.promotions-grid{grid-template-columns:repeat(3,1fr)}.delivery-grid-wrapper{grid-template-columns:1.1fr 0.9fr;gap:6rem}.delivery-stats{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(3,1fr)}.contact-grid{grid-template-columns:0.9fr 1.1fr;gap:4rem}.footer-top{grid-template-columns:1.2fr 1.8fr}.footer-links-grid{grid-template-columns:repeat(3,1fr)}.cta-banner-actions{flex-direction:row}}
+  @media screen and (min-width:1200px){.menu-products-grid{grid-template-columns:repeat(4,1fr)}}
+  @media screen and (max-width:991px){.hamburger{display:flex}.nav-menu{position:absolute;top:100%;left:0;width:100%;background-color:var(--bg-primary);border-bottom:2px solid rgba(255, 255, 255, 0.05);max-height:0;overflow:hidden;transition:max-height var(--transition-normal)}.nav-menu.open{max-height:380px;padding:1.5rem 0}.nav-menu ul{flex-direction:column;align-items:center;gap:1.5rem}.nav-link{font-size:1.1rem}.btn-header-cta{display:none}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}.hamburger.active .bar:nth-child(2){opacity:0}.hamburger.active .bar:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}
+  </style>
+
+  <!-- Structured Data (JSON-LD) para Restaurantes -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FastFoodRestaurant",
+      "name": "Burger House",
+      "image": "/src/assets/images/hero_burger_1781201321724.jpg",
+      "priceRange": "$$",
+      "telephone": "+5511999999999",
+      "servesCuisine": "Hambúrgueres",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenida Paulista, 1000",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01310-100",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "18:00",
+          "closes": "23:45"
+        }
+      ],
+      "menu": "https://burgerhouse.com.br/#cardapio",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-23.561684",
+        "longitude": "-46.655981"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="btn-top" class="btn-top" aria-label="Voltar para o topo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- HEADER FIXO -->
+  <header id="header" class="header">
+    <div class="header-container">
+      <a href="#inicio" class="logo" id="header-logo">
+        <span class="emoji">🍔</span> Burger <span class="accent-text">House</span>
+      </a>
+
+      <!-- Menu de Navegação -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+          <li><a href="#promocoes" class="nav-link">Promoções</a></li>
+          <li><a href="#delivery" class="nav-link">Delivery</a></li>
+          <li><a href="#depoimentos" class="nav-link">Feedback</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão CTA & Hamburger -->
+      <div class="header-actions">
+        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20ver%20o%20cardápio%20e%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-header-cta" id="cta-header">
+          <span class="emoji">📱</span> Pedir Agora
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-container">
+        <!-- Coluna de Texto -->
+        <div class="hero-content fade-in-element">
+          <!-- Selo Mais Vendido -->
+          <div class="badge-best-seller">
+            <span class="emoji-star">⭐</span> MAIS VENDIDO DA SENSACIONAL DA CIDADE
+          </div>
+          <h1 class="hero-title">
+            O Hambúrguer Que Vai <span class="text-gradient">Conquistar</span> Seu Paladar
+          </h1>
+          <p class="hero-subtitle">
+            Ingredientes selecionados, carne angus 100% fresca grelhada no fogo, queijo derretido de dar água na boca e entrega super rápida direto na sua porta.
+          </p>
+          <div class="hero-actions">
+            <a href="#cardapio" class="btn btn-primary scale-hover" id="cta-hero-menu">
+              <span>🍔</span> Ver Cardápio
+            </a>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido" target="_blank" rel="noopener noreferrer" class="btn btn-outline scale-hover" id="cta-hero-whatsapp">
+              <span>📱</span> Pedir pelo WhatsApp
+            </a>
+          </div>
+          
+          <div class="hero-features-preview">
+            <div class="hero-preview-item">
+              <span class="hero-preview-num">4.9</span>
+              <span class="hero-preview-lbl">No Google (2k+ reviews)</span>
+            </div>
+            <div class="hero-preview-divider"></div>
+            <div class="hero-preview-item">
+              <span class="hero-preview-num">30min</span>
+              <span class="hero-preview-lbl">Tempo estimado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna de Imagem com Efeitos Modernos -->
+        <div class="hero-image-wrapper fade-in-element">
+          <div class="hero-circle-bg"></div>
+          <img src="/src/assets/images/hero_burger_1781201321724.jpg" alt="Hambúrguer artesanal premium Burger House" class="hero-img" referrerPolicy="no-referrer" />
+          
+          <!-- Floating elements -->
+          <div class="floating-badge badge-1">
+            <span class="badge-icon">🔥</span>
+            <div class="badge-text">
+              <h4>Grelhado no Fogo</h4>
+              <p>Sabor defumado real</p>
+            </div>
+          </div>
+          <div class="floating-badge badge-2">
+            <span class="badge-icon">🥓</span>
+            <div class="badge-text">
+              <h4>Bacon Crocante</h4>
+              <p>Defumação artesanal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE DESTAQUES -->
+    <section class="highlights-section" id="destaques">
+      <div class="container">
+        <div class="highlights-grid">
+          
+          <!-- Card 1 -->
+          <div class="highlight-card fade-in-element" id="highlight-artesanal">
+            <div class="highlight-icon">🔥</div>
+            <h3 class="highlight-title">Hambúrguer Artesanal</h3>
+            <p class="highlight-desc">Pão brioche fofinho e carne fresca de 150g assada na brasa, com um blend secreto espetacular.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="highlight-card fade-in-element" id="highlight-carne">
+            <div class="highlight-icon">🥩</div>
+            <h3 class="highlight-title">Carne Selecionada</h3>
+            <p class="highlight-desc">Trabalhamos exclusivamente com blend de cortes nobres Angus de origem certificada.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="highlight-card fade-in-element" id="highlight-delivery">
+            <div class="highlight-icon">🚀</div>
+            <h3 class="highlight-title">Delivery Rápido</h3>
+            <p class="highlight-desc">Equipe própria e embalagem térmica desenvolvida para manter o queijo derretido e a batata crocante.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="highlight-card fade-in-element" id="highlight-avaliacao">
+            <div class="highlight-icon">⭐</div>
+            <h3 class="highlight-title">Avaliação 5 Estrelas</h3>
+            <p class="highlight-desc">Eleito 3 vezes seguidas como o melhor hambúrguer e melhor atendimento da região paulista.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO DIGITAL -->
+    <section id="cardapio" class="menu-section">
+      <div class="container">
+        <div class="section-header fade-in-element">
+          <span class="section-tag">Digital</span>
+          <h2 class="section-title">Nosso Cardápio</h2>
+          <p class="section-subtitle">Escolha entre nossos burgers suculentos, porções douradas, milkshakes batidos na hora e muito mais.</p>
+        </div>
+
+        <!-- Filtros de Cardápio com JS -->
+        <div class="menu-filters fade-in-element" id="menu-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="burgers">Hambúrgueres</button>
+          <button class="filter-btn" data-filter="combos">Combos</button>
+          <button class="filter-btn" data-filter="portions">Porções</button>
+          <button class="filter-btn" data-filter="drinks">Bebidas</button>
+          <button class="filter-btn" data-filter="desserts">Sobremesas</button>
+        </div>
+
+        <!-- Grid de Produtos -->
+        <div class="menu-products-grid" id="menu-products-grid">
+          
+          <!-- Produto 1: House Burger -->
+          <div class="product-card fade-in-element" data-category="burgers" id="prod-house-burger">
+            <div class="product-img-wrapper">
+              <img src="/src/assets/images/house_burger_1781201384880.jpg" alt="House Burger" class="product-img" referrerPolicy="no-referrer" />
+              <div class="product-badge">Mais Pedido</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">House Burger</h3>
+              <p class="product-desc">Pão brioche tostado na manteiga, hambúrguer artesanal de 150g grelhado, generosas fatias de queijo cheddar derretido, bacon crocante defumado e maionese secreta da casa.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 29,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20House%20Burger." target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-house-burger">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 2: Double House -->
+          <div class="product-card fade-in-element" data-category="burgers" id="prod-double-house">
+            <div class="product-img-wrapper">
+              <img src="/src/assets/images/double_burger_1781201333029.jpg" alt="Double House Burger" class="product-img" referrerPolicy="no-referrer" />
+              <div class="product-badge premium">Premium</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Double House</h3>
+              <p class="product-desc">Dois suculentos hambúrgueres artesanais de 150g grelhados na brasa, quatro fatias de queijo cheddar derretido, cebola dourada caramelizada, fatias de bacon e molho especial.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 39,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Double%20House" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-double-house">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 3: Combo Burger -->
+          <div class="product-card fade-in-element" data-category="combos" id="prod-combo-burger">
+            <div class="product-img-wrapper">
+              <img src="/src/assets/images/combo_burger_1781201344403.jpg" alt="Combo Burger" class="product-img" referrerPolicy="no-referrer" />
+              <div class="product-badge discount">20% OFF</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Combo Burger</h3>
+              <p class="product-desc">O clássico absoluto: Nosso suculento House Burger artesanal acompanhado de uma porção individual de batatas fritas crocantes bem temperadas e uma bebida bem gelada de sua escolha.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 44,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Combo%20Burger" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-combo-burger">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 4: Batata Supreme -->
+          <div class="product-card fade-in-element" data-category="portions" id="prod-batata-supreme">
+            <div class="product-img-wrapper">
+              <img src="/src/assets/images/batata_supreme_1781201356185.jpg" alt="Batata Supreme" class="product-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Batata Supreme</h3>
+              <p class="product-desc">Porção generosa de batatas fritas rústicas, douradas e incrivelmente crocantes, cobertas por uma maravilhosa cascata de creme cheddar premium quente e pedacinhos de bacon bem dourados.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 24,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Batata%20Supreme" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-batata-supreme">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 5: Milk Shake House -->
+          <div class="product-card fade-in-element" data-category="desserts" id="prod-milkshake">
+            <div class="product-img-wrapper">
+              <img src="/src/assets/images/milkshake_house_1781201370528.jpg" alt="Milk Shake House" class="product-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Milk Shake House</h3>
+              <p class="product-desc">Milkshake ultra cremoso batido na hora com sorvete de baunilha premium, infusão de chocolate italiano ou fatias de morango silvestre fresco, finalizado com chantilly e raspas belgas.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 18,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Milk%20Shake%20House" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-milkshake">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 6: Monster Burger -->
+          <div class="product-card fade-in-element" data-category="burgers" id="prod-monster-burger">
+            <div class="product-img-wrapper">
+              <img src="/src/assets/images/hero_burger_1781201321724.jpg" alt="Monster Burger" class="product-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Monster Triple</h3>
+              <p class="product-desc">Para os gigantes da fome: Três discos de hambúrguer de 150g grelhados com perfeição, triplo queijo coalho e cheddar, três camadas de bacon, anéis de cebola crispy empanados e calda barbecue.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 49,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Monster%20Triple" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-monster-burger">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 7: Onion Rings -->
+          <div class="product-card fade-in-element" data-category="portions" id="prod-onion-rings">
+            <div class="product-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1639024471283-2bc7b3c6a267?q=80&w=600&auto=format&fit=crop" alt="Onion Rings" class="product-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Onion Rings Rustico</h3>
+              <p class="product-desc">Anéis de cebola selecionados e empanados no panko com tempero especial pimenta-do-reino e páprica picante, fritos até dourar. Acompanha nosso exclusivo molho barbecue cítrico.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 19,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Onion%20Rings" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-onion-rings">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 8: Cerveja Artesanal -->
+          <div class="product-card fade-in-element" data-category="drinks" id="prod-cerveja">
+            <div class="product-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1568219656418-15c329c1103b?q=80&w=600&auto=format&fit=crop" alt="Cerveja Artesanal" class="product-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Cerveja IPA Craft</h3>
+              <p class="product-desc">Uma cerveja artesanal estilo India Pale Ale com aroma intensamente lupulado, amargor persistente e notas cítricas. Harmonização ideal para cortar a gordura do blend de carne nobre.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 14,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Cerveja%20IPA%20Craft" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-cerveja">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 9: Refrigerante Cold -->
+          <div class="product-card fade-in-element" data-category="drinks" id="prod-refri">
+            <div class="product-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=600&auto=format&fit=crop" alt="Refrigerante" class="product-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Refri Lata Trincando</h3>
+              <p class="product-desc">Refrigerantes super refrescantes servidos em lata, mantidos sob refrigeração de 0 a 2 graus. Escolha seu sabor favorito: Coca-Cola, Guaraná Antarctica ou Fanta Laranja.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 6,00</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Refri%20Lata" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-refri">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 10: Brownie Gelado -->
+          <div class="product-card fade-in-element" data-category="desserts" id="prod-brownie">
+            <div class="product-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?q=80&w=600&auto=format&fit=crop" alt="Brownie com Sorvete" class="product-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Gelato Brownie</h3>
+              <p class="product-desc">Brownie de chocolate fudge denso e quentinho, repleto de nozes picadas, coroado com uma irresistível bola de sorvete de creme artesanal e calda de caramelo toffee salgado.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 16,90</span>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%201%20Gelato%20Brownie" target="_blank" rel="noopener noreferrer" class="btn-buy" id="btn-buy-brownie">
+                  Pedir Agora <span class="arrow-icon">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOÇÕES DA SEMANA -->
+    <section id="promocoes" class="promotions-section">
+      <div class="container">
+        <div class="section-header fade-in-element">
+          <span class="section-tag">Ofertas</span>
+          <h2 class="section-title">Promoções da Semana</h2>
+          <p class="section-subtitle">Garanta promoções incríveis de terça a domingo. Aproveite descontos generosos combinados com muito sabor.</p>
+        </div>
+
+        <div class="promotions-grid">
+          
+          <!-- Promo 1 -->
+          <div class="promo-card fade-in-element" id="promo-familia">
+            <div class="promo-badge-tag">🔥 COMBO FAMÍLIA</div>
+            <div class="promo-content">
+              <h3>4 Hambúrgueres + Batata + Refri</h3>
+              <p>O banquete ideal para curtir com a galera. 4 suculentos hambúrgueres artesanais, 2 porções grandes de nossa Batata Supreme crocante, e um refrigerante de 2 Litros ultra gelado.</p>
+              <div class="promo-footer">
+                <div class="discount-label">⭐ 15% DE DESCONTO</div>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20aproveitar%20a%20Promoção%20Combo%20Família." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-promo-familia">Garantir Promoção</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Promo 2 -->
+          <div class="promo-card fade-in-element" id="promo-terca">
+            <div class="promo-badge-tag">🔥 TERÇA DO BURGER</div>
+            <div class="promo-content">
+              <h3>Todos Burgers com 30% Off</h3>
+              <p>A melhor terça do seu mês! Todos os hambúrgueres individuais do nosso cardápio entram com 30% de desconto real imediato. Chame os amigos e venha lamber os dedos.</p>
+              <div class="promo-footer">
+                <div class="discount-label">⭐ TERÇAS-FEIRAS</div>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%20hambúrgueres%20da%20promoção%20Terça%20do%20Burger." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-promo-terca">Pedir Hoje</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Promo 3 -->
+          <div class="promo-card fade-in-element" id="promo-frete">
+            <div class="promo-badge-tag">🔥 FRETE GRÁTIS</div>
+            <div class="promo-content">
+              <h3>Entrega 100% Gratuita</h3>
+              <p>Peça o quanto quiser! Para qualquer pedido realizado em nossa área de cobertura acima de R$ 60,00, a taxa de envio é por nossa conta. Aproveite o sabor sem taxas extras.</p>
+              <div class="promo-footer">
+                <div class="discount-label">⭐ ACIMA DE R$ 60</div>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20com%20Frete%20Grátis." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-promo-frete">Aproveitar Envio</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DELIVERY -->
+    <section id="delivery" class="delivery-section">
+      <div class="container">
+        <div class="delivery-grid-wrapper">
+          <!-- Coluna Informações -->
+          <div class="delivery-info fade-in-element">
+            <span class="section-tag text-orange">Logística</span>
+            <h2 class="section-title">Receba Onde Estiver</h2>
+            <p class="delivery-desc">
+              Não quer sair do sofá? Nós levamos a melhor experiência de hamburgueria artesanal premium direto para a sua casa. Com entrega otimizada de alta tecnologia e controle térmico.
+            </p>
+
+            <div class="delivery-stats">
+              <div class="stat-item">
+                <span class="stat-icon">🚀</span>
+                <div class="stat-text">
+                  <h3>Entrega Rápida</h3>
+                  <p>Saiu da chapa, voou para você.</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-icon">📍</span>
+                <div class="stat-text">
+                  <h3>Atendimento Local</h3>
+                  <p>Raio de cobertura total de até 8km.</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-icon">📱</span>
+                <div class="stat-text">
+                  <h3>Pedido Inteligente</h3>
+                  <p>WhatsApp integrado ou bot de pedidos.</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-icon">⏰</span>
+                <div class="stat-text">
+                  <h3>Tempo Médio</h3>
+                  <p>O seu pedido entregue entre 25 a 35 minutos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Mapa / Ilustração estilizada -->
+          <div class="delivery-map-container fade-in-element">
+            <div class="delivery-map-card">
+              <div class="delivery-map-header">
+                <div class="delivery-map-pulse"></div>
+                <span>Nossa Área de Cobertura Direta</span>
+              </div>
+              
+              <!-- Mapa Ilustrado via SVG Custom / Elementos Modernos -->
+              <div class="canvas-map-mockup">
+                <!-- Grid circular simulando raio -->
+                <div class="radius-circle circle-3"></div>
+                <div class="radius-circle circle-2"></div>
+                <div class="radius-circle circle-1"></div>
+                
+                <!-- Central Pin -->
+                <div class="map-pin central-pin">
+                  <span class="pin-icon">🍔</span>
+                  <div class="pin-pulse"></div>
+                </div>
+
+                <!-- Shipping Pins -->
+                <div class="map-pin courier-pin pin-a">
+                  <span class="pin-icon">🛵</span>
+                </div>
+                <div class="map-pin destination-pin pin-b">
+                  <span class="pin-icon">🏠</span>
+                </div>
+                <div class="map-pin destination-pin pin-c">
+                  <span class="pin-icon">🏢</span>
+                </div>
+
+                <!-- Custom Grid Lines -->
+                <div class="grid-line horizontal-line"></div>
+                <div class="grid-line vertical-line"></div>
+                <div class="street-label">Av. Paulista</div>
+                <div class="street-label vertical">Alameda Lorena</div>
+              </div>
+              <div class="delivery-map-footer">
+                <p>📍 Central: Av. Paulista, 1000 - São Paulo, SP</p>
+                <p class="delivery-subtext">Taxa flexível de acordo com o bairro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA INSTAGRAM-LIKE -->
+    <section class="gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-header fade-in-element">
+          <span class="section-tag">Apetite</span>
+          <h2 class="section-title">Nossos Burgers</h2>
+          <p class="section-subtitle">Dê uma olhada nos detalhes suculentos da nossa produção diária de puro sabor.</p>
+        </div>
+
+        <div class="gallery-grid">
+          
+          <div class="gallery-item fade-in-element" id="gal-1">
+            <img src="/src/assets/images/hero_burger_1781201321724.jpg" alt="Hamburguer Artesanal na brasa" class="gallery-img" referrerPolicy="no-referrer" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🔥</span>
+              <span class="gallery-text">Carne Angus</span>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-element" id="gal-2">
+            <img src="/src/assets/images/double_burger_1781201333029.jpg" alt="Incrível Double Cheddar" class="gallery-img" referrerPolicy="no-referrer" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🧀</span>
+              <span class="gallery-text">Double Cheddar</span>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-element" id="gal-3">
+            <img src="/src/assets/images/combo_burger_1781201344403.jpg" alt="Combo Completo" class="gallery-img" referrerPolicy="no-referrer" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🥤</span>
+              <span class="gallery-text">Felicidade Completa</span>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-element" id="gal-4">
+            <img src="/src/assets/images/batata_supreme_1781201356185.jpg" alt="Batata Rústica com Cheddar" class="gallery-img" referrerPolicy="no-referrer" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🍟</span>
+              <span class="gallery-text">Batata Supreme</span>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-element" id="gal-5">
+            <img src="/src/assets/images/milkshake_house_1781201370528.jpg" alt="Milkshake Cremoso" class="gallery-img" referrerPolicy="no-referrer" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🍦</span>
+              <span class="gallery-text">Milkshake Artesanal</span>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-element" id="gal-6">
+            <img src="/src/assets/images/house_burger_1781201384880.jpg" alt="Nosso Ambiente" class="gallery-img" referrerPolicy="no-referrer" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">💫</span>
+              <span class="gallery-text">House Burger</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS (CARROSSEL) -->
+    <section id="depoimentos" class="testimonials-section">
+      <div class="container">
+        
+        <div class="section-header fade-in-element">
+          <span class="section-tag">Depoimentos</span>
+          <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+          <p class="section-subtitle">Opinião honesta de quem prova e recomenda nossos burgers premium diariamente.</p>
+        </div>
+
+        <div class="carousel-container fade-in-element" id="carousel-wrapper">
+          <div class="carousel-track" id="carousel-track">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active" id="test-slide-1">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Sem dúvidas o melhor hambúrguer artesanal da cidade! A carne é super suculenta, vem muito bacon e o pão chega macio mesmo sendo por delivery. Virei cliente fiel da Burger House."</p>
+              <div class="testimonial-client">
+                <div class="client-avatar">GP</div>
+                <div class="client-meta">
+                  <h4>Guilherme Prado</h4>
+                  <span>São Paulo - SP (Local Guide)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide" id="test-slide-2">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Sensacional! Eu pedi o Combo Burger e chegou incrivelmente rápido, em menos de 25 minutos. A batata com cheddar estava extremamente crocante ainda. Recomendo muito!"</p>
+              <div class="testimonial-client">
+                <div class="client-avatar">AM</div>
+                <div class="client-meta">
+                  <h4>Amanda de Melo</h4>
+                  <span>Jardins - SP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide" id="test-slide-3">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Qualidade excelente de verdade. O Double House é imbatível! O sabor grelhado defumado da carne é exatamente o que eu procurava. Maionese verde nota mil!"</p>
+              <div class="testimonial-client">
+                <div class="client-avatar">RB</div>
+                <div class="client-meta">
+                  <h4>Rodrigo Barreto</h4>
+                  <span>Consolação - SP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide" id="test-slide-4">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Melhor custo benefício. Recomendo demais o milk shake house de chocolate belga, cremosidade incrível. Virei fã número um e sempre peço nas terças promocionais."</p>
+              <div class="testimonial-client">
+                <div class="client-avatar">CS</div>
+                <div class="client-meta">
+                  <h4>Camila Silva</h4>
+                  <span>Bela Vista - SP</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-nav prev" id="carousel-prev" aria-label="Anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="carousel-nav next" id="carousel-next" aria-label="Próximo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators" id="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION CTA PRINCIPAL (GRADIENTE) -->
+    <section class="cta-banner-section fade-in-element" id="cta-banner">
+      <div class="container">
+        <div class="cta-banner-content">
+          <h2 class="cta-banner-title">Peça Agora e Experimente o Melhor Burger da Cidade</h2>
+          <p class="cta-banner-text">Faça o seu pedido online em poucos cliques e receba quentinho no conforto do seu lar. Sabor garantido e entrega relâmpago!</p>
+          <div class="cta-banner-actions">
+            <a href="#cardapio" class="btn btn-primary yellow-theme scale-hover" id="cta-banner-menu">
+              <span>🍔</span> Ver Cardápio Completo
+            </a>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20pedir%20o%20melhor%20hambúrguer%20da%20cidade!" target="_blank" rel="noopener noreferrer" class="btn btn-dark scale-hover" id="cta-banner-whatsapp">
+              <span>📱</span> Pedir pelo WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (ACORDEÃO) -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        
+        <div class="section-header fade-in-element">
+          <span class="section-tag">Dúvidas</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-subtitle">Tire suas dúvidas rápidas sobre funcionamento, área de entrega, taxas e formas de pagamento.</p>
+        </div>
+
+        <div class="faq-accordion-wrapper fade-in-element">
+          
+          <!-- Item 1 -->
+          <div class="faq-item" id="faq-item-1">
+            <button class="faq-question">
+              <span>Qual o horário de funcionamento da casa?</span>
+              <span class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Atendemos de Terça a Domingo, das 18h00 às 23h45. Fechamos às segundas-feiras para manutenção e descanso da nossa valorosa equipe de chapeiros.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item" id="faq-item-2">
+            <button class="faq-question">
+              <span>Vocês fazem delivery para todos os bairros?</span>
+              <span class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Focamos nosso delivery em um raio de até 8km de nossa sede (Avenida Paulista, 1000). Atendemos bairros como Jardins, Consolação, Bela Vista, Pinheiros, Vila Mariana, Higienópolis e regiões adjacentes. Consulte sua taxa digitando seu CEP.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item" id="faq-item-3">
+            <button class="faq-question">
+              <span>Qual o tempo médio de entrega dos pedidos?</span>
+              <span class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>O nosso tempo médio consolidado de confecção e entrega varia de 25 a 35 minutos. Em horários de pico (como sextas e sábados das 20h às 21h30), pode se estender até 45 minutos. Sempre prezamos pelo blend fresquinho e batata frita quente!</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item" id="faq-item-4">
+            <button class="faq-question">
+              <span>Quais formas de pagamento são aceitas?</span>
+              <span class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Aceitamos Pix, cartões de crédito e débito das principais bandeiras (Visa, Mastercard, Elo, Amex) e vales-refeição eletrônicos (Alelo, Sodexo, Ticket, VR) diretamente na entrega ou pelo nosso checkout online integrado.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item" id="faq-item-5">
+            <button class="faq-question">
+              <span>Possuem opções vegetarianas no cardápio?</span>
+              <span class="faq-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Todos os nossos hambúrgueres podem ser saboreados na versão vegetariana. Nós substituímos o blend de carne vermelha por um suculento disco de hambúrguer de falafel temperado ou hambúrguer de cogumelos Porto Bello recheado de queijo gorgonzola. Basta indicar nas opções!</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact-section">
+      <div class="container">
+        <div class="section-header fade-in-element">
+          <span class="section-tag">Canais</span>
+          <h2 class="section-title">Entre em Contato</h2>
+          <p class="section-subtitle">Chame a gente no WhatsApp, passe na nossa loja física ou mande sua dúvida rápida.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Dados de Contato -->
+          <div class="contact-info-wrapper fade-in-element" id="contact-info">
+            
+            <div class="contact-info-card">
+              <div class="contact-info-item">
+                <span class="contact-icon">📍</span>
+                <div class="contact-text">
+                  <h3>Nossa Sede</h3>
+                  <p>Avenida Paulista, 1000 - Bela Vista, São Paulo - SP</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-icon">📱</span>
+                <div class="contact-text">
+                  <h3>WhatsApp Delivery</h3>
+                  <p>+55 (11) 99999-9999</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-icon">📧</span>
+                <div class="contact-text">
+                  <h3>E-mail Geral</h3>
+                  <p>contato@burgerhouse.com.br</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-icon">🕒</span>
+                <div class="contact-text">
+                  <h3>Horários de Atendimento</h3>
+                  <p>Terça a Domingo — 18h00 às 23h45</p>
+                  <p class="danger-subtext">Fechado às Segundas</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links inside contact -->
+            <div class="contact-social-pills">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-pill instagram" id="contact-ig">
+                <span>📷</span> Instagram
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-pill facebook" id="contact-fb">
+                <span>🌐</span> Facebook
+              </a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="social-pill whatsapp" id="contact-wa">
+                <span>💬</span> WhatsApp
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Mapa Estilizado Moderno -->
+          <div class="contact-map-wrapper fade-in-element" id="contact-map">
+            <div class="interactive-map-card">
+              <div class="map-tag-absolute">LOJA FÍSICA E RETIRADA</div>
+              
+              <!-- Iframe real Google Maps centralizado na Av Paulista para agregar o maior profissionalismo possível -->
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!11m18!1m12!1m3!1d3657.168481358913!2d-46.65851458502213!3d-23.56168868468165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776f!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1655000000000!5m2!1spt-BR!2sbr" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Mapa do local do Burger House"
+                id="maps-iframe">
+              </iframe>
+              
+              <div class="map-overlay-detail">
+                <h4>Venha Comer uma Clássica Brasa</h4>
+                <p>Estacionamento conveniado no local gratuito por 1h de consumo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <a href="#inicio" class="footer-logo" id="footer-logo-link">
+            🍔 Burger <span class="accent-text">House</span>
+          </a>
+          <p class="footer-brand-desc">
+            A melhor hamburgueria gourmet da cidade. Oferecendo hambúrgueres artesanais de carne nobre Angus preparados na brasa com queijo super cremoso e muito carinho.
+          </p>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-links-grid">
+          <div class="footer-group">
+            <h4 class="footer-title">Links Úteis</h4>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#cardapio">Cardápio</a></li>
+              <li><a href="#promocoes">Promoções</a></li>
+              <li><a href="#delivery">Delivery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-group">
+            <h4 class="footer-title">Canais</h4>
+            <ul>
+              <li><a href="#depoimentos">Feedbacks</a></li>
+              <li><a href="#faq">Perguntas Frequentes</a></li>
+              <li><a href="#contato">Fale Conosco</a></li>
+              <li><a href="https://wa.me/5511999999999">Suporte Whatsapp</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-group">
+            <h4 class="footer-title">Social</h4>
+            <div class="footer-socials">
+              <a href="https://instagram.com" class="social-icon" aria-label="Instagram">
+                <!-- Inline SVG Instagram -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com" class="social-icon" aria-label="Facebook">
+                <!-- Inline SVG Facebook -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://wa.me/5511999999999" class="social-icon" aria-label="WhatsApp">
+                <!-- Inline SVG WhatsApp -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </a>
+            </div>
+            <p class="footer-hours">Avenida Paulista, 1000<br>Central: (11) 99999-9999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Burger House. Todos os direitos reservados.</p>
+        <p class="footer-crafted">Sabor defumado e paixão artesanal grelhados diariamente.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ==========================================================================
+     1. MENU HAMBÚRGUER MOBILE
+     ========================================================================== */
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Fechar menu ao clicar em qualquer link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+
+  /* ==========================================================================
+     2. HEADER FIXO (STICKY HEADER)
+     ========================================================================== */
+  const header = document.getElementById('header');
+
+  const handleHeaderScroll = () => {
+    if (header) {
+      if (window.scrollY > 60) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    }
+  };
+
+  window.addEventListener('scroll', handleHeaderScroll);
+  // Executar imediatamente para caso o usuário recarregue a página já scrollada
+  handleHeaderScroll();
+
+
+  /* ==========================================================================
+     3. BOTÃO VOLTAR AO TOPO
+     ========================================================================== */
+  const btnTop = document.getElementById('btn-top');
+
+  const handleBtnTopVisibility = () => {
+    if (btnTop) {
+      if (window.scrollY > 400) {
+        btnTop.classList.add('show');
+      } else {
+        btnTop.classList.remove('show');
+      }
+    }
+  };
+
+  window.addEventListener('scroll', handleBtnTopVisibility);
+
+  if (btnTop) {
+    btnTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+
+  /* ==========================================================================
+     4. FILTRO DO CARDÁPIO DIGITAL
+     ========================================================================== */
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const products = document.querySelectorAll('.product-card');
+
+  if (filterButtons.length > 0 && products.length > 0) {
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remover classe ativa de todos os botões e colocar no selecionado
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        products.forEach(product => {
+          const category = product.getAttribute('data-category');
+
+          if (filterValue === 'all' || category === filterValue) {
+            product.classList.remove('hidden');
+            // Re-disparar animação suave
+            product.style.opacity = '0';
+            product.style.transform = 'translateY(15px)';
+            
+            setTimeout(() => {
+              product.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+              product.style.opacity = '1';
+              product.style.transform = 'translateY(0)';
+            }, 50);
+          } else {
+            product.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
+
+  /* ==========================================================================
+     5. CARROSSEL DE DEPOIMENTOS
+     ========================================================================== */
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  const indicators = document.querySelectorAll('.indicator');
+  
+  let currentSlide = 0;
+  let autoPlayTimer = null;
+  const slideInterval = 6000; // 6 segundos
+
+  const showSlide = (index) => {
+    if (slides.length === 0) return;
+
+    // Garantir bounds circulares
+    if (index >= slides.length) {
+      currentSlide = 0;
+    } else if (index < 0) {
+      currentSlide = slides.length - 1;
+    } else {
+      currentSlide = index;
+    }
+
+    // Atualizar slides ativos
+    slides.forEach((slide, i) => {
+      if (i === currentSlide) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+
+    // Atualizar marcadores indicadores
+    indicators.forEach((indicator, i) => {
+      if (i === currentSlide) {
+        indicator.classList.add('active');
+      } else {
+        indicator.classList.remove('active');
+      }
+    });
+  };
+
+  const nextSlide = () => {
+    showSlide(currentSlide + 1);
+  };
+
+  const prevSlide = () => {
+    showSlide(currentSlide - 1);
+  };
+
+  const startAutoPlay = () => {
+    autoPlayTimer = setInterval(nextSlide, slideInterval);
+  };
+
+  const resetAutoPlay = () => {
+    if (autoPlayTimer) {
+      clearInterval(autoPlayTimer);
+      startAutoPlay();
+    }
+  };
+
+  // Listeners manuais
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoPlay();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetAutoPlay();
+    });
+  }
+
+  if (indicators.length > 0) {
+    indicators.forEach(indicator => {
+      indicator.addEventListener('click', (e) => {
+        const slideIndex = parseInt(e.target.getAttribute('data-slide'), 10);
+        showSlide(slideIndex);
+        resetAutoPlay();
+      });
+    });
+  }
+
+  // Inicializar Autoplay
+  if (slides.length > 0) {
+    startAutoPlay();
+  }
+
+
+  /* ==========================================================================
+     6. ACORDEÃO DO FAQ (PERGUNTAS FREQUENTES)
+     ========================================================================== */
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  if (faqQuestions.length > 0) {
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isActive = item.classList.contains('active');
+
+        // Fechar todos os outros accordions (opcional para manter elegante)
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            if (otherAnswer) otherAnswer.style.maxHeight = null;
+          }
+        });
+
+        // Alternar item atual
+        if (isActive) {
+          item.classList.remove('active');
+          if (answer) answer.style.maxHeight = null;
+        } else {
+          item.classList.add('active');
+          if (answer) answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  }
+
+
+  /* ==========================================================================
+     7. FADE IN AO SCROLL (INTERSECTION OBSERVER)
+     ========================================================================== */
+  const fadeElements = document.querySelectorAll('.fade-in-element');
+
+  if ('IntersectionObserver' in window) {
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scrolled');
+          // Desobservar após animar para salvar performance
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.1, // Elemento aparece 10% na tela antes de disparar
+      rootMargin: '0px 0px -50px 0px' // Margem na base para melhor timing
+    });
+
+    fadeElements.forEach(element => {
+      fadeObserver.observe(element);
+    });
+  } else {
+    // Fallback caso navegador seja jurássico sem Intersection Observer
+    fadeElements.forEach(element => {
+      element.classList.add('scrolled');
+    });
+  }
+
+
+  /* ==========================================================================
+     8. SCROLL SUAVE & MARCADOR DE MENU SELECIONADO (ACTIVE LINK TRACKING)
+     ========================================================================== */
+  const sections = document.querySelectorAll('section[id]');
+
+  const activeLinkObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.3,
+    rootMargin: '-10% 0px -55% 0px' // Compensar header e otimizar centralidade
+  });
+
+  sections.forEach(section => {
+    activeLinkObserver.observe(section);
+  });
+
+});
+  </script>
+</body>
+</html>
